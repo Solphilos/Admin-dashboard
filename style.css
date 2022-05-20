@@ -15,10 +15,75 @@ body, html {
     background-color: rgb(0, 81, 255);
     grid-column: 1;
     grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 6fr;
+    
+    
+}
+
+.sidebar ul, a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+li {
+    margin-bottom: 14px;
+}
+
+
+.dashboard {
+    color: white;
+    margin-left: 20px;
 }
 
 .header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
 
+.search_container {
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+     grid-column: 1 / 2;
+    
+}
+
+.profile_container {
+
+}
+
+.greeting_container {
+
+}
+
+
+#search {
+    height: 35%;
+    width: 75%;
+    align-self: center;
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    border-style: none;
+    
+}
+
+.greeting {
+    font-size: 20px;
+}
+
+span {
+    font-size: 25px;
+}
+
+button {
+    font-size: 20px;
+    height: 40px;
+    width: 90px;
+    background-color: rgb(0, 68, 255);
 }
 
 .main_content {
